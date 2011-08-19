@@ -1,0 +1,13 @@
+Influx should store data in HTML
+	- Twitter
+	- Tumblr
+	- Facebook Open API
+	- Del.icio.us
+
+How do you give people the ability to build things from / use this data?
+
+qwerly
+
+automatic social graph crawling
+
+Determine processor by profile URL (flickr.com, facebook.com, twitter.com, etc)
