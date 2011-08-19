@@ -11,3 +11,5 @@ qwerly
 automatic social graph crawling
 
 Determine processor by profile URL (flickr.com, facebook.com, twitter.com, etc)
+
+http://learnpythonthehardway.org/book/
