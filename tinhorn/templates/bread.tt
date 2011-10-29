@@ -1,0 +1,11 @@
+[% WRAPPER layout.tt -%]
+
+<h1>Breader</h1>
+
+<ul>
+	[% FOREACH model IN models -%]
+	<li><a href="/bread/browse?m=[% model %]">[% model %]</a></li>
+	[% END -%]
+</ul>
+
+[% END -%]

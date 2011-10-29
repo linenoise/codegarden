@@ -1,0 +1,3 @@
+#LWP-Cookies-1.0
+Set-Cookie3: JSESSIONID=8FF410B42AF6C56C71FE46A4D3AEC09C.0s3yLOvevcschGyJxAJeiA; path="/"; domain=apis.tdameritrade.com; path_spec; discard; version=0
+Set-Cookie3: NSC_QSPE-BQJT-443=4497539c29a0; path="/"; domain=apis.tdameritrade.com; path_spec; discard; version=0

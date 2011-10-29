@@ -1,0 +1,47 @@
+Data-Table-Formatter
+
+Data::Table::Formatter is a module that simply formats data tables.  It supports a variety of layouts, including ASCII, CSV, Fixed-width, HTML, JSON, LaTeX, TSV, Wiki, XML, and YAML.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Data::Table::Formatter
+
+Additionally, support and documentation is available on the Data::Table::Formatter website:
+
+	http://dann.stayskal.com/software/data-table-formatter
+
+Please direct all bug reports to RT, CPAN's request tracker:
+
+    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Data-Table-Formatter
+
+To annotate the documentation for this module, visit AnnoCPAN, Annotated CPAN documentation:
+
+    http://annocpan.org/dist/Data-Table-Formatter
+
+Finally, if you like or dislike this module, please rate it constructively at CPAN Ratings:
+
+    http://cpanratings.perl.org/d/Data-Table-Formatter
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2004-2010 Dann Stayskal
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+

@@ -1,0 +1,32 @@
+include:
+    - fixtures/configs/hosts.yml
+
+hosts:
+    localhost:
+        hostname: prime.local
+        type: Darwin
+        services:
+            - OpenSSH
+            - Apache2
+            - MySQL
+    veldra-misc:
+        hostname: veldra-misc
+        type: Linux
+        services:
+            - OpenSSH
+            - Apache2
+    porcupine:
+        hostname: porcupine.repositaculo.us
+        services:
+            - OpenSSH 
+            - Subversion
+
+procedure:
+    for: Website
+    destination: 
+        on: veldra-misc
+        at: /var/www/index.html
+        using: scp
+    source:
+        on: localhost
+        at: /Users/dann/Codebase/Perl Mods/Net-Automation/fixtures/mockups/index.html

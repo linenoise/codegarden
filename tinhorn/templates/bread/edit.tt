@@ -1,0 +1,43 @@
+[% WRAPPER layout.tt -%]
+
+<h1>Breader :: [% model %] :: edit ([% object.name %])</h1>
+
+<form action="/bread/update" method="POST" class="breader">
+	
+	<input type="hidden" name="m" value="[% model %]" />
+	<input type="hidden" name="id" value="[% object.id %]" />
+
+[% FOREACH column IN columns -%]
+	<p>
+		<strong>[% column %]</strong><br />
+	
+	[% foreign = column.match('^(.*)_id$') -%]
+	[% foreign_table = foreign.0 -%]
+	[% IF foreign_table && foreigns.$foreign_table %]
+		<select name="value_[% column %]">
+			[% FOREACH foreign IN foreigns.$foreign_table -%]
+				[% IF foreign.id == object.$column -%]
+	  				<option value="[% foreign.id %]" selected="selected">[% foreign.name %]</option>
+	  			[% ELSE -%]
+					<option value="[% foreign.id %]">[% foreign.name %]</option>
+				[% END -%]
+			[% END -%]
+		</select>
+	[% ELSE -%]
+		<input type="text" name="value_[% column %]" value="[% object.$column %]" />
+	[% END -%]
+	</p>
+[% END -%]
+
+	<p><input type="submit" name="submit" value="Commit edits"></p>
+</form>
+
+<p style="border-top: 1px solid black">
+	<a href="/bread/browse?m=[% model %]">Browse [% model %]</a><br />
+	<a href="/bread/read?m=[% model %]&amp;id=[% object.id %]">Read this [% model %]</a><br />
+	<a href="/bread/delete?m=[% model %]&amp;id=[% object.id %]">Delete this [% model %]</a>
+</p>
+
+<pre>[% debug %]</pre>
+
+[% END -%]

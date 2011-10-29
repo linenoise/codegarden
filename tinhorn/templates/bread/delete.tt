@@ -1,0 +1,23 @@
+[% WRAPPER layout.tt -%]
+
+<h1>Breader :: [% model %] :: delete ([% object.name %])</h1>
+
+<form action="/bread/remove" method="POST" class="breader">
+	
+	<input type="hidden" name="m" value="[% model %]" />
+	<input type="hidden" name="id" value="[% object.id %]" />
+
+	<p style="font-size: 14pt">Are you sure you want to delete [% object.name %]?</p>
+
+	<p><input type="submit" name="submit" value="Yes, delete it."></p>
+</form>
+
+<p style="border-top: 1px solid black">
+	<a href="/bread/browse?m=[% model %]">Browse [% model %]</a><br />
+	<a href="/bread/read?m=[% model %]&amp;id=[% object.id %]">Read this [% model %]</a><br />
+	<a href="/bread/edit?m=[% model %]&amp;id=[% object.id %]">Edit this [% model %]</a><br />
+</p>
+
+<pre>[% debug %]</pre>
+
+[% END -%]

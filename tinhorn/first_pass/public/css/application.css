@@ -1,0 +1,56 @@
+body {
+	line-height:1.5;
+	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+	color:#000;
+	background-color: #F5F4E9;
+	font-size:10pt;
+}
+
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.66em; margin-bottom: 0.5em;}
+h3 { font-size: 1.33em; }
+a {color: #A5452C;}
+
+
+div#header {
+	background-color: #48607C;
+	padding: 1.5em 5px; 
+	border-bottom: 3px solid #98B3CE;
+}
+
+div#header a.title {
+	font-size: 2em;
+	letter-spacing: 3px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+div#page {
+	padding-top: 1em;
+	padding-bottom: 2em;
+	background-color: #F5F4E9;
+}
+
+div#footer {
+	border-top: 2px dashed #98B3CE;
+	padding: 1em 0em 0.5em 0em;
+	font-size: 9pt;
+}
+
+div.nav_list a{
+	display: block;
+	background-color: #E5E4D9;;
+	font-size: 1.2em;
+	padding: 0.15em 0.5em;
+	border: 3px solid #C5C4B9;
+	margin-bottom: 0.5em;
+}
+
+td.change_up3 { color: #0B0; border: 1px solid #0B0;}
+td.change_up2 { color: #090; border: 1px solid #090; }
+td.change_up1 { color: #070; border: 1px solid #070; }
+td.change_hold { color: black; }
+td.change_down1 { color: #900; border: 1px solid #900; }
+td.change_down2 { color: #C00; border: 1px solid #C00; }
+td.change_down3 { color: #F00; border: 1px solid #F00; }

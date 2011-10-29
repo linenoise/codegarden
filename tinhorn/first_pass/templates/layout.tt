@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+	<head profile="http://gmpg.org/xfn/11">
+		<title>Tinhorn[% IF title %][% title %][% END %]</title>
+		<link rel="SHORTCUT ICON" href="/favicon.ico" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+		<!--[if lt IE 8]>
+		  <link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<![endif]-->
+		<link rel="stylesheet" href="/css/application.css" type="text/css" media="screen, projection, print">
+		
+	</head>
+	<body>
+		<div id="header">
+			<div class="container">
+				<a href="/" class="title">tinhorn</a>
+			</div>
+		</div>
+		<div id="page">
+			<div class="container">
+				
+			[% content %]
+
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container">
+
+				<div class="span-24 last">
+					<a href="/">home</a> |
+					<a href="/status">status</a> |
+					<a href="/test">test</a>
+				</div>
+
+				<div class="span-24 last">
+					<a href="/currencies">currencies</a>
+				</div>
+
+				<div class="span-24 last" style="padding-top: 0.5em;">
+					Copyright &copy; 2007-2010 by Dann Stayskal.  All rights reserved.
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

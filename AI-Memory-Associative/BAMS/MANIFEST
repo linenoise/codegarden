@@ -1,0 +1,4 @@
+lib/AI/Memory/Associative/Bidirectional.pm
+Makefile.PL
+MANIFEST
+t/handlesSuccess.t

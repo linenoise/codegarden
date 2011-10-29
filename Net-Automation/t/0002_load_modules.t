@@ -1,0 +1,27 @@
+use Test::More tests => 25;
+
+use_ok("Net::Automation");
+use_ok("Net::Automation::Configuration");
+use_ok("Net::Automation::Host::Darwin");
+use_ok("Net::Automation::Host::FreeBSD");
+use_ok("Net::Automation::Host::Linux::Debian");
+use_ok("Net::Automation::Host::Linux::RedHat");
+use_ok("Net::Automation::Host::Linux::SuSE");
+use_ok("Net::Automation::Host::Linux");
+use_ok("Net::Automation::Host");
+use_ok("Net::Automation::Procedure::Backup");
+use_ok("Net::Automation::Procedure::Deployment::Continuous");
+use_ok("Net::Automation::Procedure::Deployment::Staggered");
+use_ok("Net::Automation::Procedure::Deployment");
+use_ok("Net::Automation::Procedure::For::WebApplication");
+use_ok("Net::Automation::Procedure::For::WebSite");
+use_ok("Net::Automation::Procedure::For");
+use_ok("Net::Automation::Procedure::Synchronize");
+use_ok("Net::Automation::Procedure");
+use_ok("Net::Automation::Service::Apache2");
+use_ok("Net::Automation::Service::FileSystem");
+use_ok("Net::Automation::Service::Git");
+use_ok("Net::Automation::Service::MySQL");
+use_ok("Net::Automation::Service::OpenSSH");
+use_ok("Net::Automation::Service::Subversion");
+use_ok("Net::Automation::Service");

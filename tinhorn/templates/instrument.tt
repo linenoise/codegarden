@@ -1,0 +1,199 @@
+[% WRAPPER layout.tt -%]
+
+<div class="span-24 last">
+	<h1 style="margin-bottom: 0px">[% name %]</h1>
+	<p>[% exchange %]:[% symbol %]</p>
+</div>
+
+<!-- Left Column -->
+<div class="span-11 append-1">
+	
+	<div class="financials">
+		<div class="span-8">
+			<div class="span-8 last">		
+				<div class="span-4 status">
+					<strong>[% financials.quote_date %]</strong><br />
+					<span class="major_price">[% financials.price %]</span><span class="currency">[% financials.currency %]</span><br />
+				</div>
+				<div class="span-4 status last">
+					<strong>Price change</strong><br />
+					<span class="minor_price">[% financials.price_change %]</span><span class="currency">[% financials.currency %]</span><br />
+					<span cpass="price_change_percent">([% financials.price_change_percent%])</span>
+				
+				</div>
+			</div>
+			<div class="span-8 last" style="margin-top: 1.5em">		
+				<div class="span-4 status">
+					<strong>Volume</strong><br />
+					<span class="volume">[% financials.volume %]</span>
+				</div>
+				<div class="span-4 status last">
+					<strong>High</strong><br />
+					<span class="minor_price">[% financials.high %]</span><span class="currency">[% financials.currency %]</span>
+				</div>
+			</div>
+			<div class="span-8 last" style="margin-top: 1.5em">
+				<div class="span-4 status">
+					<strong>Open</strong><br />
+					<span class="minor_price">[% financials.open %]</span><span class="currency">[% financials.currency %]</span>
+				</div>
+				<div class="span-4 status last">
+					<strong>Low</strong><br />
+					<span class="minor_price">[% financials.low %]</span><span class="currency">[% financials.currency %]</span>
+				</div>
+			</div>
+			<div class="span-8 last" style="margin-top: 1.5em">
+				<div class="span-4 status">
+					<strong>Rating</strong><br />
+					[% IF financials.rating == '--' -%]
+					unavailable
+					[% ELSE -%]
+					<div class="rating_chart_indicator" style="width:[% financials.rating_bar_size * 140 / 100 %]px">&nbsp;</div>
+					<div class="rating_chart">&nbsp;</div>
+					<div class="rating_chart_labels">
+						<div class="rating_chart_label" style="float:right; padding-right: 5px">sell</div>
+						<div class="rating_chart_label" style="float:left">buy</div>
+					</div>
+					[% END -%]
+				</div>
+				<div class="span-4 status last">
+					<strong>EPS</strong><br />
+					<span class="minor_price">[% financials.earnings_per_share %]</span><span class="currency">[% financials.currency %]</span>
+				</div>
+			</div>
+			
+		</div>
+		<div class="span-3 last">
+			<div class="span-3 last status forecast">
+				<strong>Forecast</strong><br />
+
+				<table style="border: 0px">
+					<tr>
+						<td class="forecast_day">Mon</td>
+						<td class="forecast_arrow"><img src="/images/arrowballs/upish.png" /></td>
+						<td class="forecast_price">13.56</td>
+					</tr>
+					<tr>
+						<td class="forecast_day">Tue</td>
+						<td class="forecast_arrow"><img src="/images/arrowballs/mmmeh.png" /></td>
+						<td class="forecast_price">13.57</td>
+					</tr>
+					<tr>
+						<td class="forecast_day">Wed</td>
+						<td class="forecast_arrow"><img src="/images/arrowballs/upish.png" /></td>
+						<td class="forecast_price">13.72</td>
+					</tr>
+					<tr>
+						<td class="forecast_day">Thu</td>
+						<td class="forecast_arrow"><img src="/images/arrowballs/downish.png" /></td>
+						<td class="forecast_price">13.65</td>
+					</tr>
+					<tr>
+						<td class="forecast_day">Fri</td>
+						<td class="forecast_arrow"><img src="/images/arrowballs/mmmeh.png" /></td>
+						<td class="forecast_price">13.64</td>
+					</tr>
+					<tr>
+						<td class="forecast_day">Sat</td>
+						<td class="forecast_arrow"><img src="/images/arrowballs/mmmeh.png" /></td>
+						<td class="forecast_price">13.65</td>
+					</tr>
+					<tr>
+						<td class="forecast_day">Sun</td>
+						<td class="forecast_arrow"><img src="/images/arrowballs/mmmeh.png" /></td>
+						<td class="forecast_price">13.64</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="span-11 last">
+		<h3 style="margin: 1em 0em 0em 0em">Headlines</h3>
+		<div class="headlines">
+			<div class="headline">
+				<a href="/news/">Lorem ipsum dolor sit amet consectetur alipsing alet</a>
+				<div class="headline_lede">This apparently should mean something to you.</div>
+				<div class="headline_credit">27 April 2010 via Google News</div>
+			</div>
+			<div class="headline">
+				<a href="/news/">Phasellus pretium libero nibh</a><br />
+				<div class="headline_lede">No, this is not Latin.  Read on.</div>
+				<div class="headline_credit">25 April 2010 via Reuters</div>
+			</div>
+			<div class="headline last">
+				<a href="/news/">Duis in magna nisi, nec condimentum metus</a><br />
+				<div class="headline_lede">Tametsi is est Latin. Teneo vestri radix.</div>
+				<div class="headline_credit">23 April 2010 via Associated Press</div>
+			</div>
+		</div>
+	</div>
+	<div class="span-11 last">
+		<h3>Further research about [% name %]</h3>
+	</div>
+	<div class="span-11 last">
+		<div class="span-2">
+			<strong>Overview</strong><br />
+			[% IF home_url %]<a href="[% home_url %]">Their site</a><br />[% END %]
+			[% IF wikipedia_url%]<a href="[% wikipedia_url %]">Wikipedia</a><br />[% END %]
+		</div>
+		<div class="span-2">
+			<strong>Financials</strong><br />
+			[% IF google_finance_url%]<a href="[% google_finance_url %]">Google</a><br />[% END %]
+			[% IF reuters_finance_url%]<a href="[% reuters_finance_url %]">Reuters</a><br />[% END %]
+			[% IF yahoo_finance_url%]<a href="[% yahoo_finance_url %]">Yahoo!</a><br />[% END %]
+		</div>
+	</div>
+</div>
+
+<!-- Right column -->
+<div class="span-12 last">
+	
+	<div id="price_graph" style="width:460px; height:170px;"></div>
+	<div id="volume_graph" style="width:460px; height:50px;"></div>
+	<div style="text-align:center;font-style:oblique">Thirty day price and volume for [% name %]</div>
+	
+	<script id="source" language="javascript" type="text/javascript">
+	$(function () {
+
+	    var price_data = [
+		[% FOREACH point IN financials.graph_points -%]
+			[[% point.index %], [% point.close %]], 
+		[% END -%]
+		];
+	    $.plot($("#price_graph"), [ price_data ], {
+		        xaxis: {
+					ticks: 0,
+		        },
+		        yaxis: {
+					labelWidth: 35,
+		        },
+		});
+
+	    var volume_data = [
+		[% FOREACH point IN financials.graph_points -%]
+			[[% point.index %], [% point.volume %]], 
+		[% END -%]
+		];
+	    $.plot($("#volume_graph"), [ volume_data ], {
+	        xaxis: {
+				ticks: 0,
+	        },
+	        yaxis: {
+				labelWidth: 35,
+	        },
+		});
+
+	});
+	</script>
+
+	
+	<h3>Synopsis</h3>
+	
+	[% description %]
+	
+	
+</div>
+
+[% END -%]

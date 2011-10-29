@@ -1,0 +1,11 @@
+Changes
+lib/Data/Table/Formatter.pm
+Makefile.PL
+MANIFEST
+README
+t/000-load.t
+t/001-pod.t
+t/002-pod-coverage.t
+t/100-imperative-interface.t
+t/101-object-interface.t
+t/200-ascii-layout.t

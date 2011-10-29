@@ -1,0 +1,25 @@
+
+
+       AI::Memory::Associative::Bidirectional
+
+      A Memory handler based on Neural Networks
+
+###
+# I use the Kosko Algorithm:
+#
+# 1. For all i and j, reset all weights (wij) and input values (ai, bi) to zero
+# 2. Load A and B into memory - the binary associations to be learned
+# 3. Compute the weuight matrix
+# 4. Repeat steps 2 and 3 for every association to be learned
+# 5. Input values for A and B to be run on the network
+# 6. Run the A->B iterations on the network
+# 7. Run the B->A iterations on the network
+# 8. Repeat steps 6 and 7 until there are no changes in the A or B vectors
+#
+# This method is described in Chapter 3 of
+#   "Introduction to Neural and Cognitive Modeling"
+#     by Dr. Daniel S. Levine, 2000.
+###
+
+
+$Id: README,v $

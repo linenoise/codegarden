@@ -1,0 +1,36 @@
+[% WRAPPER layout.tt -%]
+
+<h1>Breader :: [% model %] :: add</h1>
+
+<form action="/bread/create" method="POST" class="breader">
+	
+	<input type="hidden" name="m" value="[% model %]" />
+
+[% FOREACH column IN columns -%]
+	<p>
+		<strong>[% column %]</strong><br />
+	
+	[% foreign = column.match('^(.*)_id$') -%]
+	[% foreign_table = foreign.0 -%]
+	[% IF foreign_table && foreigns.$foreign_table %]
+		<select name="value_[% column %]">
+			[% FOREACH foreign IN foreigns.$foreign_table -%]
+				<option value="[% foreign.id %]">[% foreign.name %]</option>
+			[% END -%]
+		</select><br />
+		<a href="/bread/add?m=[% foreign_table FILTER ucfirst %]">Add a New [% foreign_table FILTER ucfirst %] first?</a>
+		
+	[% ELSE -%]
+		<input type="text" name="value_[% column %]" value="" />
+	[% END -%]
+	</p>
+[% END -%]
+
+	<p><input type="submit" name="submit" value="Create"></p>
+</form>
+
+<p style="border-top: 1px solid black">
+	<a href="/bread/browse?m=[% model %]">Browse [% model %]</a><br />
+</p>
+
+[% END -%]

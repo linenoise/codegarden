@@ -1,0 +1,7 @@
+#!/usr/bin/perl -w
+use strict;
+use lib qw( lib/ ); ### <---- TAKE THIS OUT BEFORE PACKAGING FOR CPAN TODO BROKEN FIXME YOU FUCKER
+use Net::Automation;
+
+$| = 1;  ### Autoflushing
+exit ! Net::Automation->new()->run();

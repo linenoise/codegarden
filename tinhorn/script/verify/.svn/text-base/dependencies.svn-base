@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+
+###
+# Tinhorn: script/verify/dependencies
+# Generates a list of all dependencies and their installation statuses
+# Copyright (c) 2010 by Dann Stayskal.  All rights reserved.
+###
+
+use strict;
+use lib qw( lib/ );
+use Tinhorn qw( verify_dependencies );
+exit ! verify_dependencies();

@@ -1,0 +1,7 @@
+#!/usr/bin/ruby
+
+require 'twitter'
+require 'yaml'
+
+configuration = YAML::load('~/.turaco.yml')
+puts configuration.inspect

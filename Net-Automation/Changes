@@ -1,0 +1,3 @@
+Revision history for perl module Net::Automation:
+
+0.01 - First draft of Net::Automation, Net::Automation::Deployment, Net::Automation::Server, Net::Automation::Daemon, and Net::Automation::SCM

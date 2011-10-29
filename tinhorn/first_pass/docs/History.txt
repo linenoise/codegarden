@@ -1,0 +1,19 @@
+NAME
+    Tinhorn::Documentation::History - Tinhorn Historical Documentation
+
+SYNOPSIS
+            use Tinhorn::Documentation;
+            
+        my $html = Tinhorn::Documentation::render('Tinhorn::Documentation::History');
+
+HISTORY
+    version 0.01 - April 8, 2010
+        First integration of Tinhorn from pieces of four of Dann's other
+        projects: Svefn (a computational lingusitic parser), Nodegel (a
+        graph database), BAMS (a neural dynamic library) and forexa (a
+        foreign exchange data model). Preliminary integration with TD
+        Ameritrade API.
+
+COPYRIGHT
+    Copyright 2007-2010 by Dann Stayskal. All rights reserved.
+

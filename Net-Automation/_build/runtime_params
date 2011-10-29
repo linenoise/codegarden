@@ -1,0 +1,4 @@
+do{ my $x = {
+       'test_files' => 't/0002_load_modules.t'
+     };
+$x; }

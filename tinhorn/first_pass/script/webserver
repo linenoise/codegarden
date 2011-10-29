@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+
+###
+# Tinhorn: script/webserver
+# Runs the Tinhorn webserver in standalone mode
+# Copyright (c) 2010 by Dann Stayskal.  All rights reserved.
+###
+
+use strict;
+use lib qw( lib/perl/ );
+use Tinhorn qw( start_webserver );
+exit !start_webserver();

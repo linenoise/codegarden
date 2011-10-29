@@ -1,0 +1,15 @@
+[% WRAPPER layout.tt -%]
+
+<div class="span-4 nav_list">
+	<h1>currencies</h1>
+	<a href="/currencies">Index</a>
+	[% FOREACH currency IN currencies -%]
+	<a href="/currencies/view?base=[% currency.code %]">[% currency.name %]</a>
+	[% END -%]
+</div>
+
+<div class="span-19 prepend-1 last">
+	[% content %]
+</div>
+
+[% END -%]

@@ -1,0 +1,36 @@
+NAME
+    Tinhorn::Documentation::History - Tinhorn Architectural Documentation
+
+SYNOPSIS
+            use Tinhorn::Documentation;
+            
+        my $html = Tinhorn::Documentation::render('Tinhorn::Documentation::Architecture');
+
+ARCHITECTURE
+    A baseline Tinhorn build has the following root folders:
+
+    "conf"
+        Configuration files for Tinhorn bridges
+
+    "data"
+        Raw import and export data for Tinhorn serialization and
+        deserialization
+
+    "lib"
+        Contains all libraries used by Tinhorn, organized by language
+
+    "public"
+        All files publicly accessible through HTTP when webserver is running
+
+    "script"
+        Command and control processes for Tinhorn
+
+    "test"
+        Unit, Integration, and Functional tests for Tinhorn
+
+    "vendor"
+        Build repository for all external and vendor-specific modules
+
+COPYRIGHT
+    Copyright 2007-2010 by Dann Stayskal. All rights reserved.
+

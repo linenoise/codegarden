@@ -1,0 +1,5 @@
+[% WRAPPER layout.tt -%]
+
+<pre>[% status %]</pre>
+
+[% END -%]

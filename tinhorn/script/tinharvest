@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+
+###
+# Tinhorn: script/harvest
+# Runs the Tinhorn data harvester
+# Copyright (c) 2010 by Dann Stayskal.  All rights reserved.
+###
+
+use strict;
+use lib qw( lib/ );
+use Tinhorn qw( start_harvest );
+exit !start_harvest();

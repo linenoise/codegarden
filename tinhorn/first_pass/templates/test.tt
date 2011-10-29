@@ -1,0 +1,13 @@
+[% WRAPPER layout.tt -%]
+
+<h1>tests</h1>
+<div class="span-4 nav_list">
+	<a href="/test">Index</a>
+	<a href="/test/typography">Typography</a>
+</div>
+
+<div class="span-19 prepend-1 last">
+	[% content %]
+</div>
+
+[% END -%]

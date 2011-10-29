@@ -1,0 +1,34 @@
+[% WRAPPER layout.tt -%]
+
+<h1>Breader :: [% model %] :: browse</h1>
+
+<table>
+	<tr>
+		[% FOREACH column IN columns -%]
+			<th>[% column %]</th>
+		[% END -%]
+		<th>manipulation</th>
+	</tr>
+	[% FOREACH object IN objects -%]
+	<tr>
+		[% FOREACH column IN columns -%]
+			[% IF column.match('_id$') -%]
+				<td>[% object.$column %] ([% object.$column.name %])</td>
+			[% ELSE -%]
+				<td>[% object.$column %]</td>
+			[% END -%]
+		[% END -%]
+		<td>
+			<a href="/bread/read?m=[% model %]&amp;id=[% object.id %]" style="padding-right: 1em">Read</a>
+			<a href="/bread/edit?m=[% model %]&amp;id=[% object.id %]" style="padding-right: 1em">Edit</a>
+			<a href="/bread/delete?m=[% model %]&amp;id=[% object.id %]" style="padding-right: 1em">Delete</a>
+		</td>
+	</tr>
+	[% END -%]
+</table>
+
+<p style="border-top: 1px solid black">
+	<a href="/bread/add?m=[% model %]">Add New [%model %]</a>
+</p>
+
+[% END -%]

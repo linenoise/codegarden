@@ -1,0 +1,42 @@
+#!/usr/bin/ruby
+
+require 'rubygems'  
+require 'tweetstream'  
+
+twitter = TweetStream::Client.new('danndalf','OZ79IF980')
+
+if ARGV.length > 0 then
+	twitter.track(ARGV) do |status|
+		puts "[#{status.user.screen_name}] #{status.text}"
+	end
+else
+	twitter.sample do |status|  
+		puts "[#{status.user.screen_name}] #{status.text}"  
+	end 
+end
+
+# Track the terms 'keyword1' and 'keyword2'  
+#twitter.track('missile') do |status|  
+#   puts "[#{status.user.screen_name}] #{status.text}"
+#end  
+
+# Track users with IDs 123 and 456  
+#TweetStream::Client.new('user','pass').follow(123, 456) do |status|  
+#   puts "[#{status.user.screen_name}] #{status.text}"  
+#end  
+
+### Daemonization
+# # The third argument is an optional process name.  
+# TweetStream::Daemon.new('user','pass','tracker').track('keyword1','keyword2') do |status|  
+#   # Do something like dump the status to ActiveRecord  
+#   # or anything else you want.  
+# end  
+
+### Deletion and Limit Notices
+#   1. TweetStream::Client.new('user','pass').on_delete{ |status_id, user_id|  
+#   2.   Tweet.delete(status_id)  
+#      3. }.on_limit { |skip_count|  
+#	         4.   # do something  
+#			    5. }.track('intridea') do |status|  
+#			    6.   # do something with the status like normal  
+#				       7. end  

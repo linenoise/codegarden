@@ -1,0 +1,7 @@
+[% WRAPPER layout.tt -%]
+
+<h1>Market Overview</h1>
+
+[% content %]
+
+[% END -%]

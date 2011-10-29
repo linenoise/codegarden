@@ -1,0 +1,92 @@
+10
+
+dir
+17
+svn+ssh://dstayskal@projects.stayskal.com/var/repos/codebase/tinhorn
+svn+ssh://dstayskal@projects.stayskal.com/var/repos/codebase
+
+
+
+2010-04-25T12:15:26.555841Z
+17
+dstayskal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0691f12e-d871-44f6-b506-82533cf8bf30
+
+test
+dir
+
+tmp
+dir
+
+log
+dir
+
+script
+dir
+
+conf
+dir
+
+lib
+dir
+
+docs
+dir
+
+data
+dir
+
+Makefile
+file
+
+
+
+
+2010-04-25T12:10:05.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2010-04-25T12:12:20.029211Z
+14
+dstayskal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+public
+dir
+
+templates
+dir
+

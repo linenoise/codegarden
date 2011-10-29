@@ -1,0 +1,5 @@
+[% WRAPPER layout.tt -%]
+
+<h2>I got your horse right here</h2>
+
+[% END -%]

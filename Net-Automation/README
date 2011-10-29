@@ -1,0 +1,86 @@
+Net::Automation - Nothing too important just yet.
+
+It's more of a work in progress.
+
+in configuration.pm, when reading data type, try to use -- if it fails, prepend Net::Automation::--whatever and try to use again??
+
+
+
+nap deploy website ---> 
+	./website.yml
+	./automation/website.yml
+	~/.automation/website.yml
+	/etc/automation/website.yml
+	./etc/automation/website.yml
+	./conf/automation/website.yml
+	./config/automation/website.yml
+
+nap deploy ---> ./automation.yml
+	./automation.yml
+	~/.automation.yml
+	/etc/automation.yml
+	./etc/automation.yml
+	./conf/automation.yml
+	./config/automation.yml
+
+
+Core Net::Automation Modules:
+
+Net::Automation
+Net::Automation::Configuration
+Net::Automation::Daemon
+Net::Automation::Host
+Net::Automation::Procedure
+Net::Automation::Procedure::Deployment <--- where the logic of ./app/current + symlinks goes
+Net::Automation::Procedure::For <--- where third party procedures go
+Net::Automation::Procedure::Map
+Net::Automation::Repository
+
+
+
+
+Net::Automation::Procedure::For::ECL::Application::Deployment
+
+Net::Automation::Procedure::For::RailsApp <--- imports and configures NAPD
+	- install procedure
+	- update procedure
+	- restart procedure
+
+
+~/.
+
+
+Modules in Net::Automation
+
+
+TODO
+
+Note: anything that will need to be able to connect to an external entity (which is most of this) will need configuration options to allow for automated build and test.
+
+Get tests for the configuration file functionality working (which are storing variables for the procedures)
+Get tests for the procedure functionality working
+Get tests for the server functionality running
+Get tests for the daemon functionality running
+
+Net::Automation::Procedure::Deployment::Continuous
+Net::Automation::Procedure::Deployment::Staggered
+
+Net/Automation/Daemon/Apache.pm 
+Net/Automation/Daemon/PostgreSQL.pm
+
+Net/Automation/Repository/Arch.pm 
+Net/Automation/Repository/Bazaar.pm 
+Net/Automation/Repository/CVS.pm 
+Net/Automation/Repository/Darcs.pm 
+Net/Automation/Repository/Mercurial.pm 
+Net/Automation/Repository/Monotone.pm
+
+Net/Automation/Host/Linux/Slackware
+Net/Automation/Host/OpenBSD
+Net/Automation/Host/NetBSD
+Net/Automation/Host/Solaris
+
+
+Net/Automation/Host/Dreamhost/WebServer
+Net/Automation/Host/Dreamhost/DatabaseServer
+Net/Automation/Host/Dreamhost/MailServer

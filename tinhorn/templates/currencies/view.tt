@@ -1,0 +1,19 @@
+[% WRAPPER currencies.tt -%]
+
+<h1>[% currency.name %]</h1>
+
+
+[% FOREACH quote_currency IN currencies -%]
+<div>
+[% NEXT IF quote_currency.code == currency.code -%]
+<span style="font-weight:bold;">[% quote_currency.code %]</span>: 
+
+[% SET base = currency.code -%]
+[% SET quote = quote_currency.code -%]
+[% exchange_rates.$base.$quote %]
+
+</div>
+
+[% END -%]
+
+[% END -%]

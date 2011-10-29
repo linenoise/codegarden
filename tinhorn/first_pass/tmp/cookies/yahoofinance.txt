@@ -1,0 +1,2 @@
+#LWP-Cookies-1.0
+Set-Cookie3: B="c3gdp8t5s5ggk&b=3&s=r8"; path="/"; domain=.yahoo.com; path_spec; expires="2037-06-02 20:00:00Z"; version=0

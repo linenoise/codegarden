@@ -1,0 +1,5 @@
+adapter: 'mysql'
+username: 'tinhorn'
+password: '12d1a6ac'
+hostname: 'localhost'
+database: 'tinhorn'

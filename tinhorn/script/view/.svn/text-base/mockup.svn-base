@@ -1,0 +1,21 @@
+#!/usr/bin/perl -w
+
+###
+# Tinhorn: script/view/mockup
+# Decodes and presents a stored HTTP mockup
+# Copyright (c) 2010 by Dann Stayskal.  All rights reserved.
+###
+
+use strict;
+use lib qw( lib/ );
+use Tinhorn::Controller::Mockups;
+
+if ($ARGV[0]) {
+	print $ARGV[0];
+} else {
+	print "Usage: script/view/mockup [data/mockups/http/mockup_name.storable]\n\n";
+	exit 1;
+}
+print new Tinhorn::Controller::Mockups->view($ARGV[0]);
+
+exit 0;

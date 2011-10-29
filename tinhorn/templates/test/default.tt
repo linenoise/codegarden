@@ -1,0 +1,5 @@
+[% WRAPPER test.tt -%]
+
+<p>Nothing special here.</p>
+
+[% END -%]

@@ -1,0 +1,23 @@
+authentication:
+    - dallas:
+        services:
+            - OpenSSH:
+                username: some_username
+                password: some_password
+            - Apache2:
+                realm: my_realm
+                username: my_username
+                password: my_password
+    - mydb:
+        services:
+           -  MySQL:
+               
+    - assets:
+        hostname: assets.ecarlist.com
+        services:
+            - OpenSSH
+            - Subversion
+    - gmail:
+        hostname: gmail.google.com
+        services:
+            - GMail

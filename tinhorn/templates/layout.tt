@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+	<head profile="http://gmpg.org/xfn/11">
+		<title>Tinhorn[% IF title %][% title %][% END %]</title>
+		<link rel="SHORTCUT ICON" href="/favicon.ico" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+		<!--[if lt IE 8]>
+		  <link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<![endif]-->
+		<link rel="stylesheet" href="/css/application.css" type="text/css" media="screen, projection, print">
+		<script type="text/javascript" src="/javascript/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="/javascript/jquery.sparkline.min.js"></script>
+		<script type="text/javascript" src="/javascript/jquery.flot.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		function hide_nav_menus() {
+			$("#markets_menu").hide();
+			$("#currencies_menu").hide();
+			$("#population_menu").hide();
+			$("#weather_menu").hide();
+			$("#systems_menu").hide();				
+		}
+		
+		function hide_sensors() {
+			$("#nav_menu_top_sensor").hide();
+			$("#nav_menu_bottom_sensor").hide();
+		}
+		function show_sensors() {
+			$("#nav_menu_top_sensor").show();
+			$("#nav_menu_bottom_sensor").show();
+		}
+		$(document).ready(function(){
+			
+			// Show the nav menus when the cursor enters the nav menu button
+			$("#nav_markets").hover(function(event){
+				hide_nav_menus();
+				show_sensors();	
+				$("#markets_menu").show();
+			});
+			$("#nav_currencies").hover(function(event){
+				hide_nav_menus();
+				show_sensors();	
+				$("#currencies_menu").show();
+			});
+			$("#nav_population").hover(function(event){
+				hide_nav_menus();
+				show_sensors();	
+				$("#population_menu").show();
+			});
+			$("#nav_weather").hover(function(event){
+				hide_nav_menus();
+				show_sensors();	
+				$("#weather_menu").show();
+			});
+			$("#nav_systems").hover(function(event){
+				hide_nav_menus();
+				show_sensors();	
+				$("#systems_menu").show();
+			});
+			
+			// Fade the nav menus out when the cursor leaves the menu
+			$("#nav_menu_top_sensor").hover(function(event){ hide_nav_menus(); hide_sensors(); });
+			$("#nav_menu_bottom_sensor").hover(function(event){ hide_nav_menus(); hide_sensors(); });
+			$(".header_item").hover(function(event){ hide_nav_menus(); hide_sensors(); });
+			
+		});
+		</script>
+
+		<div id="nav_menu_top_sensor"></div>
+		<div id="header">
+			<div class="container">
+				<div class="span-5">
+					<div class="header_item">
+						<a href="/" class="title"><img src="/images/tinhorn_logo.png" /></a>
+					</div>
+				</div>
+				<div class="span-15">
+					<div class="header_search">
+						<form action="/search" method="POST">
+							<input class="search_query" type="text" name="q" size="20"/><input class="search_button" type="submit" name="go" value="search" />
+						</form>
+					</div>
+					<div class="header_nav">
+						<div class="span-3 first">
+							<div class="header_nav_button" id="nav_markets">
+								News <img src="/images/nav_down_arrow.png" />
+							</div>
+						</div>
+						<div class="span-3">
+							<div class="header_nav_button" id="nav_currencies">
+								Currencies <img src="/images/nav_down_arrow.png" />
+							</div>
+						</div>
+						<div class="span-3">
+							<div class="header_nav_button" id="nav_population">
+								Population <img src="/images/nav_down_arrow.png" />
+							</div>
+						</div>
+						<div class="span-3">
+							<div class="header_nav_button" id="nav_weather">
+								Weather <img src="/images/nav_down_arrow.png" />
+							</div>
+						</div>
+						<div class="span-3 last">
+							<div class="header_nav_button" id="nav_systems">
+								Systems <img src="/images/nav_down_arrow.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span-4 last">
+					<div class="header_item authentication">
+						Logged in as <strong>[% username %]</strong><br />
+						<a href="/logout">logout</a> | <a href="/settings">settings</a><br />
+						<a href="/inbox">0 new messages</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="nav_menu_bottom_sensor"></div>
+		<div id="nav_menus">
+			<div id="markets_menu" class="nav_menu">
+				<h2>Markets menu goes here</h2>
+			</div>
+			<div id="currencies_menu" class="nav_menu">
+				<h2>Currencies menu goes here</h2>
+			</div>
+			<div id="population_menu" class="nav_menu">
+				<h2>Population menu goes here</h2>
+			</div>
+			<div id="weather_menu" class="nav_menu">
+				<h2>Weather menu goes here</h2>
+			</div>
+			<div id="systems_menu" class="nav_menu">
+					<div>
+						<strong>Harvester:</strong>
+						[% IF systems.harvester_pid -%]
+							running on PID [% systems.harvester_pid %]<br />
+						[% ELSE -%]
+							<strong>NOT RUNNING</strong><br />
+						[% END -%]
+					</div>
+					<div>
+					
+						<strong>Breader</strong>: 
+						<a href="/bread/browse?m=Country">Countries</a> | 
+						<a href="/bread/browse?m=Currency">Currencies</a> | 
+						<a href="/bread/browse?m=Exchange">Exchanges</a> | 
+						<a href="/bread/browse?m=Instrument">Instruments</a>
+					</div>	
+					<div style="text-align: right"><a href="/status">Full status &raquo;</a></div>
+			</div>
+		</div>
+		
+		<div id="page">
+			<div class="container">
+				
+			[% content %]
+
+			</div>
+		</div>
+		<div id="credit">
+			<div class="container">
+				<div class="span-24 last" style="padding-top: 0.5em;">
+					<div class="span-5">
+						<div style="font-size: 24pt; margin: -8px 0px -25px 0px;">tinhorn</div>
+					</div>
+					<div class="span-19 last">
+						 <div style="text-align:right">
+							&copy; Copyright 2010 Dann Stayskal<br />All rights reserved
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container">
+				<div class="span-24 last" style="padding: 0.5em 0em 1em 0em;border-bottom: 2px solid #98B3CE; ">
+					<div class="span-10">
+						<form action="/search" method="POST">
+							<input class="search_query" type="text" name="q" size="20"/><input class="search_button" type="submit" name="go" value="search" />
+						</form>
+					</div>
+					<div class="span-10">
+						<div class="headlines">
+							<strong>Headlines</strong><br />
+							<div class="headline">
+								<a href="/news/">Lorem ipsum dolor sit amet consectetur alipsing alet</a>
+								<div class="headline_lede">This apparently should mean something to you.</div>
+								<div class="headline_credit">27 April 2010 via Google News</div>
+							</div>
+							<div class="headline">
+								<a href="/news/">Phasellus pretium libero nibh</a><br />
+								<div class="headline_lede">No, this is not Latin.  Read on.</div>
+								<div class="headline_credit">25 April 2010 via Reuters</div>
+							</div>
+							<div class="headline last">
+								<a href="/news/">Duis in magna nisi, nec condimentum metus</a><br />
+								<div class="headline_lede">Tametsi is est Latin. Teneo vestri radix.</div>
+								<div class="headline_credit">23 April 2010 via Associated Press</div>
+							</div>
+						</div>
+					</div>
+					<div class="span-4 last" style="text-align: right">
+						<strong>About</strong><br />
+						<a href="/policies/tos">Terms of Service</a><br />
+						<a href="/policies/privacy">Privacy Policy</a><br />
+						<a href="mailto:dann@stayskal.com">Contact the Author</a><br />
+						<br />
+						<strong>Overviews</strong><br />
+						<a href="/news">News</a><br />
+						<a href="/currencies">Currencies</a><br />
+						<a href="/population">Population</a><br />
+						<a href="/weather">Weather</a><br />
+						<a href="/systems">Systems</a><br />
+						
+					</div>
+				</div>
+				<div class="span-24 last" style="padding-top: 0.em;">
+					<p>Tinhorn provides quantitative forecasts of financial market trends through analysis of market conditions, news, currencies, demographic and geopolitical trends, and weather.  This page contains no recommendation to buy, sell, or hold any financial instrument.  Seriously.  This page was populated with words and numbers by an artificial intelligence system of Dann Stayskal's design.  If you want financial advice, talk to a human&mdash;generally one with a knack and a license for financial planning.  I'm also not a lawyer.  I'm a computer.  Computers can't be lawyers.  So this is not legal advice, either.</p>
+					<p>All quotes could be delayed by at least thirty minutes, or as long as it takes me to get around to getting them for you.  That should inspire some confidence.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+[% WRAPPER layout.tt -%]
+
+<h1>Breader :: [% model %] :: read ([% object.name %])</h1>
+
+[% FOREACH column IN columns -%]
+	<p>
+	<strong>[% column %]</strong><br />
+
+	[% IF column.match('_id$') -%]
+		<a href="/bread/read?m=[% column.match('^(.*)_id$').0 FILTER ucfirst %]&amp;id=[% object.$column %]">[% object.$column.name %]</a>
+	[% ELSE -%]
+		[% object.$column %]
+	[% END -%]
+	</p>
+[% END -%]
+
+<p style="border-top: 1px solid black">
+	<a href="/bread/browse?m=[% model %]">Browse [% model %]</a><br />
+	<a href="/bread/edit?m=[% model %]&amp;id=[% object.id %]">Edit this [% model %]</a><br />
+	<a href="/bread/delete?m=[% model %]&amp;id=[% object.id %]">Delete this [% model %]</a>
+</p>
+
+[% END -%]

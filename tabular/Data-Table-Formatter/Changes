@@ -1,0 +1,8 @@
+Revision history for Data-Table-Formatter
+
+0.1     Mid-2004
+        First version, used for everything2.com and related side projects
+
+0.2     January 18, 2010
+        Packaged for CPAN, limited distribution for testing purposes, all non-ASCII support removed.
+

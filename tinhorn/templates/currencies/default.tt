@@ -1,0 +1,33 @@
+[% WRAPPER currencies.tt -%]
+
+<h1>exchange rates</h1>
+
+<p>As of [% today_date %]:</p>
+
+<table>
+	<tr>
+		<th>&nbsp;</th>
+		[% FOREACH base_currency IN currencies -%]
+		<th>[% base_currency.code %]</th>
+		[% END -%]
+	</tr>
+	
+[% FOREACH base_currency IN currencies -%]
+<tr>
+	<th>[% base_currency.code %]</th>
+[% FOREACH quote_currency IN currencies -%]
+[% IF base_currency.code == quote_currency.code %]
+	<td>&nbsp;</td>
+
+[% ELSE %]
+	[% SET base = base_currency.code -%]
+	[% SET quote = quote_currency.code -%]
+	<td class="change_[% change_colors.$base.$quote %]">[% exchange_rates.$base.$quote %]</td>
+	[% END -%]
+[% END -%]
+</tr>
+
+[% END -%]
+</table>
+
+[% END -%]

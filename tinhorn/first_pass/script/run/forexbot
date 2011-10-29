@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+
+###
+# Tinhorn: script/run/forexbot
+# Runs the Tinhorn ForexBot in standalone mode
+# Copyright (c) 2010 by Dann Stayskal.  All rights reserved.
+###
+
+use strict;
+use lib qw( lib/perl/ );
+use Tinhorn qw( start_forexbot );
+exit ! start_forexbot();
