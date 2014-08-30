@@ -82,11 +82,11 @@ sub new {
 
 =head1 AUTHORS
 
-This module written by Dann Stayskal <dann@stayskal.com>.
+This module written by Danne Stayskal <danne@stayskal.com>.
 
 =head1 COPYRIGHT
 
-This module is Copyright (c) 2009 by Dann Stayskal <dann@stayskal.com>.
+This module is Copyright (c) 2009 by Danne Stayskal <danne@stayskal.com>.
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License

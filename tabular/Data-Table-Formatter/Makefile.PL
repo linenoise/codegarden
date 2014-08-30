@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'Data::Table::Formatter',
-    AUTHOR              => q{Dann Stayskal <dann@stayskal.com>},
+    AUTHOR              => q{Danne Stayskal <danne@stayskal.com>},
     VERSION_FROM        => 'lib/Data/Table/Formatter.pm',
     ABSTRACT_FROM       => 'lib/Data/Table/Formatter.pm',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002

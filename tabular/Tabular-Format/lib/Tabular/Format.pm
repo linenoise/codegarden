@@ -360,7 +360,7 @@ sub build {
 
 =head1 AUTHOR
 
-Dann Stayskal, C<< <dann at stayskal.com> >>
+Danne Stayskal, C<< <dann at stayskal.com> >>
 
 
 =head1 BUGS
@@ -377,7 +377,7 @@ You can find documentation for this module with the perldoc command.
 
 Additionally, support and documentaiton is available on the Tabular::Format website:
 
-	L<http://dann.stayskal.com/software/tabular-format>
+	L<http://danne.stayskal.com/software/tabular-format>
 
 
 =head1 ACKNOWLEDGEMENTS
@@ -385,7 +385,7 @@ Additionally, support and documentaiton is available on the Tabular::Format webs
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2004-2010 Dann Stayskal.  Very few rights reserved:
+Copyright 2004-2010 Danne Stayskal.  Very few rights reserved:
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published

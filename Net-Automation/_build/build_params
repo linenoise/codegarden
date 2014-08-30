@@ -51,7 +51,7 @@ do{ my $x = [
                           ],
          'perl' => '/usr/bin/perl',
          'dist_author' => [
-                            'Dann Stayskal <dann@cpan.org>'
+                            'Danne Stayskal <dann@cpan.org>'
                           ],
          'use_rcfile' => 1,
          'configure_requires' => {},

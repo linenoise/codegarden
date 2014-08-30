@@ -9,7 +9,7 @@ WriteMakefile(
     'PREREQ_PM'     => { 'Test::Simple' => 0.41 },
     'dist'          => { COMPRESS => 'gzip --best', SUFFIX => 'gz' },
     ($] >= 5.005 ? (
-      'AUTHOR'        => 'Dann Stayskal <dann@doulopolis.net>',
+      'AUTHOR'        => 'Danne Stayskal <dann@doulopolis.net>',
       'ABSTRACT_FROM' => 'lib/AI/Memory/Associative/Bidirectional.pm',
     ) : () )
 );

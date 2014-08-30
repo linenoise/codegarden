@@ -3,7 +3,7 @@
 ###
 # Tinhorn: script/verify/dependencies
 # Generates a list of all dependencies and their installation statuses
-# Copyright (c) 2010 by Dann Stayskal.  All rights reserved.
+# Copyright (c) 2010 by Danne Stayskal.  All rights reserved.
 ###
 
 use strict;

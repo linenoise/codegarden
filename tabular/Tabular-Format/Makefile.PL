@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'Tabular::Format',
-    AUTHOR              => q{Dann Stayskal <dann@stayskal.com>},
+    AUTHOR              => q{Danne Stayskal <danne@stayskal.com>},
     VERSION_FROM        => 'lib/Tabular/Format.pm',
     ABSTRACT_FROM       => 'lib/Tabular/Format.pm',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002

@@ -602,7 +602,7 @@ sub build {
 
 =head1 AUTHOR
 
-Dann Stayskal, C<< <dann at stayskal.com> >>
+Danne Stayskal, C<< <dann at stayskal.com> >>
 
 
 =head1 BUGS AND FEATURE REQUESTS
@@ -622,7 +622,7 @@ You can find documentation for this module with the perldoc command.
 
 Additionally, support and documentation is available on the Data::Table::Formatter website:
 
-	L<http://dann.stayskal.com/software/data-table-formatter>
+	L<http://danne.stayskal.com/software/data-table-formatter>
 
 To annotate the documentation for this module, visit AnnoCPAN, Annotated CPAN documentation:
 
@@ -635,7 +635,7 @@ Finally, if you like or dislike this module, please rate it constructively at CP
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2004-2010 Dann Stayskal.  Very few rights reserved:
+Copyright 2004-2010 Danne Stayskal.  Very few rights reserved:
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published

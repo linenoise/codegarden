@@ -3,7 +3,7 @@
 ###
 # Tinhorn: script/run/forexbot
 # Runs the Tinhorn ForexBot in standalone mode
-# Copyright (c) 2010 by Dann Stayskal.  All rights reserved.
+# Copyright (c) 2010 by Danne Stayskal.  All rights reserved.
 ###
 
 use strict;

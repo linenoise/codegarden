@@ -24,7 +24,7 @@ Tinhorn::Model::Country->has_a(currency_id => 'Tinhorn::Model::Currency');
 
 =head1 COPYRIGHT
 
-Copyright 2007-2010 by Dann Stayskal.  All rights reserved.
+Copyright 2007-2010 by Danne Stayskal.  All rights reserved.
 
 =cut
 

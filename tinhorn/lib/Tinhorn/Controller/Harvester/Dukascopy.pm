@@ -131,7 +131,7 @@ sub get_historical_data {
 
 =head1 COPYRIGHT
 
-Copyright 2007-2010 by Dann Stayskal.  All rights reserved.
+Copyright 2007-2010 by Danne Stayskal.  All rights reserved.
 
 =cut
 

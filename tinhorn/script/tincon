@@ -3,7 +3,7 @@
 ###
 # Tinhorn: script/console
 # Runs the Tinhorn console in standalone mode
-# Copyright (c) 2010 by Dann Stayskal.  All rights reserved.
+# Copyright (c) 2010 by Danne Stayskal.  All rights reserved.
 ###
 
 use strict;

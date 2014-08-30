@@ -123,7 +123,7 @@ sub process {
 
 =head1 COPYRIGHT
 
-Copyright 2007-2010 by Dann Stayskal.  All rights reserved.
+Copyright 2007-2010 by Danne Stayskal.  All rights reserved.
 
 =cut
 1;

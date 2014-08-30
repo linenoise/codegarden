@@ -11,7 +11,7 @@
 #   MakeMaker Parameters:
 
 #     ABSTRACT_FROM => q[lib/Data/Table/Formatter.pm]
-#     AUTHOR => q[Dann Stayskal <dann@stayskal.com>]
+#     AUTHOR => q[Danne Stayskal <danne@stayskal.com>]
 #     LICENSE => q[perl]
 #     NAME => q[Data::Table::Formatter]
 #     PL_FILES => {  }
@@ -479,7 +479,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) 'version:            0.2' >> META_new.yml
 	$(NOECHO) $(ECHO) 'abstract:           Formats tabular data using ASCII, CSV, Fixed-width, HTML, JSON, LaTeX, TSV, Wiki, XML, and YAML layouts.' >> META_new.yml
 	$(NOECHO) $(ECHO) 'author:' >> META_new.yml
-	$(NOECHO) $(ECHO) '    - Dann Stayskal <dann@stayskal.com>' >> META_new.yml
+	$(NOECHO) $(ECHO) '    - Danne Stayskal <danne@stayskal.com>' >> META_new.yml
 	$(NOECHO) $(ECHO) 'license:            perl' >> META_new.yml
 	$(NOECHO) $(ECHO) 'distribution_type:  module' >> META_new.yml
 	$(NOECHO) $(ECHO) 'configure_requires:' >> META_new.yml
@@ -788,7 +788,7 @@ testdb_static :: testdb_dynamic
 ppd :
 	$(NOECHO) $(ECHO) '<SOFTPKG NAME="$(DISTNAME)" VERSION="0.2">' > $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <ABSTRACT>Formats tabular data using ASCII, CSV, Fixed-width, HTML, JSON, LaTeX, TSV, Wiki, XML, and YAML layouts.</ABSTRACT>' >> $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) '    <AUTHOR>Dann Stayskal &lt;dann@stayskal.com&gt;</AUTHOR>' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '    <AUTHOR>Danne Stayskal &lt;danne@stayskal.com&gt;</AUTHOR>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Test::More" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="darwin-thread-multi-2level-5.10" />' >> $(DISTNAME).ppd

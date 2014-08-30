@@ -179,7 +179,7 @@ http://doulopolis.net/
 
 =head1 COPYRIGHT
 
-Copyright (c) 2004 Dann Stayskal E<lt>dann@stayskal.netE<gt>.
+Copyright (c) 2004 Danne Stayskal E<lt>dann@stayskal.netE<gt>.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

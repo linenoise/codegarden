@@ -3,7 +3,7 @@
 ###
 # Tinhorn: script/view/mockup
 # Decodes and presents a stored HTTP mockup
-# Copyright (c) 2010 by Dann Stayskal.  All rights reserved.
+# Copyright (c) 2010 by Danne Stayskal.  All rights reserved.
 ###
 
 use strict;
