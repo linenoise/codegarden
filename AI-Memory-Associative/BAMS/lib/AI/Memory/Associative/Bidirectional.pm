@@ -1,4 +1,4 @@
-# $Id: Bidirectional.pm,v 0.1 2004/10/25 10:09:17 dann Exp $
+# $Id: Bidirectional.pm,v 0.1 2004/10/25 10:09:17 danne Exp $
 
 package AI::Memory::Associative::Bidirectional;
 
@@ -40,7 +40,7 @@ use strict;
 use warnings;
 require Exporter; 
 our @ISA = qw( Exporter );
-our $VERSION = (split(/ /,'$Id: Bidirectional.pm,v 0.1 2004/10/25 10:09:17 dann Exp $'))[2];
+our $VERSION = (split(/ /,'$Id: Bidirectional.pm,v 0.1 2004/10/25 10:09:17 danne Exp $'))[2];
 
 
 ### new()
@@ -175,11 +175,11 @@ __END__
 
 =head1 SEE ALSO
 
-http://doulopolis.net/
+http://danne.stayskal.com/
 
 =head1 COPYRIGHT
 
-Copyright (c) 2004 Danne Stayskal E<lt>dann@stayskal.netE<gt>.
+Copyright (c) 2004 Danne Stayskal E<lt>danne@stayskal.comE<gt>.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

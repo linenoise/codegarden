@@ -2,7 +2,7 @@ use Module::Build;
 
 my $b = Module::Build->new (
 	module_name => 'Net::Automation',
-	dist_author => 'Danne Stayskal <dann@cpan.org>',
+	dist_author => 'Danne Stayskal <danne@stayskal.com>',
 	dist_version => '0.01',
 	license => 'gpl',
 	requires => {

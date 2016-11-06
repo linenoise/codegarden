@@ -1,4 +1,4 @@
-# $Id: Makefile.PL,v 0.1 2004/10/25 10:08:25 dann Exp $
+# $Id: Makefile.PL,v 0.1 2004/10/25 10:08:25 danne Exp $
 use strict;
 use ExtUtils::MakeMaker;
 
@@ -9,7 +9,7 @@ WriteMakefile(
     'PREREQ_PM'     => { 'Test::Simple' => 0.41 },
     'dist'          => { COMPRESS => 'gzip --best', SUFFIX => 'gz' },
     ($] >= 5.005 ? (
-      'AUTHOR'        => 'Danne Stayskal <dann@doulopolis.net>',
+      'AUTHOR'        => 'Danne Stayskal <danne@stayskal.com>',
       'ABSTRACT_FROM' => 'lib/AI/Memory/Associative/Bidirectional.pm',
     ) : () )
 );

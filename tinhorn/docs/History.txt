@@ -8,7 +8,7 @@ SYNOPSIS
 
 HISTORY
     version 0.01 - April 8, 2010
-        First integration of Tinhorn from pieces of four of Dann's other
+        First integration of Tinhorn from pieces of four of Danne's other
         projects: Svefn (a computational lingusitic parser), Nodegel (a
         graph database), BAMS (a neural dynamic library) and forexa (a
         foreign exchange data model). Preliminary integration with TD

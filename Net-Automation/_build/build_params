@@ -30,7 +30,7 @@ do{ my $x = [
                                     'conflicts',
                                     'recommends'
                                   ],
-         'base_dir' => '/Users/dann/Desktop/Net-Automation',
+         'base_dir' => '/Users/danne/Desktop/Net-Automation',
          'allow_mb_mismatch' => 0,
          'xs_files' => undef,
          'destdir' => undef,
@@ -51,7 +51,7 @@ do{ my $x = [
                           ],
          'perl' => '/usr/bin/perl',
          'dist_author' => [
-                            'Danne Stayskal <dann@cpan.org>'
+                            'Danne Stayskal <danne@stayskal.com>'
                           ],
          'use_rcfile' => 1,
          'configure_requires' => {},
@@ -172,7 +172,7 @@ do{ my $x = [
                                'pod',
                                'script'
                              ],
-         'orig_dir' => '/Users/dann/Desktop/Net-Automation',
+         'orig_dir' => '/Users/danne/Desktop/Net-Automation',
          'include_dirs' => [],
          'installdirs' => 'site',
          'create_makefile_pl' => 'traditional',

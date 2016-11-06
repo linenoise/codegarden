@@ -6,7 +6,7 @@ open("HEADERS",'<','headers.txt')
   ||die "can't open EXIF headers file!\n$?\n$!\n";
 
 # diskutil unmount /dev/disk1s1
-# dd if=/dev/disk1s1 of=/Users/dann/Desktop/recordings.iso
+# dd if=/dev/disk1s1 of=/Users/danne/Desktop/recordings.iso
 open("CARDIMG",'<', 'recordings.iso')
   ||die "can't open card image!\n$?\n$!\n";
 

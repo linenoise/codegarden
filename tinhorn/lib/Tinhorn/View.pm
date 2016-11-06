@@ -48,7 +48,7 @@ sub render{
 		EVAL_PERL    => 0,
 	});
 
-	$vars->{username} ||= 'dann';
+	$vars->{username} ||= 'danne';
 	
 	$vars->{systems}->{harvester_pid} = `cat tmp/harvester.pid`;
 	$vars->{systems}->{webserver_pid} = `cat tmp/webserver.pid`;

@@ -360,7 +360,7 @@ sub build {
 
 =head1 AUTHOR
 
-Danne Stayskal, C<< <dann at stayskal.com> >>
+Danne Stayskal, C<< <danne at stayskal.com> >>
 
 
 =head1 BUGS

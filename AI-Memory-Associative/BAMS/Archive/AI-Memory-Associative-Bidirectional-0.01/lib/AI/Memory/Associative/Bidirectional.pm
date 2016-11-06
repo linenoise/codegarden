@@ -9,7 +9,7 @@ our $VERSION = (split(/ /,'$Id: Bidirectional.pm,v $'))[2];
 #
 #      Bidirectional Associative Memory Object
 #
-# Copyright (c) 2004 Danne Stayskal <dann@stayskal.net>.
+# Copyright (c) 2004 Danne Stayskal <danne@stayskal.com>.
 #
 # This library is free software; you can redistribute it and/or modify
 # it under the same terms as Perl itself.

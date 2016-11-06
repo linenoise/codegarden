@@ -56,8 +56,8 @@ Returns on success: $session (which gets crammed into $self->{session}), which l
 	          'nasdaq-quotes' => 'realtime',
 	          'associated-account-id' => '757415492',
 	          'cdi' => 'A000000024055413',
-	          'user-id' => 'dannstayskal',
-	          'session-id' => 'E7572E384950059BBA0FD6B48F817369.8XnYkbjP2NVPaI7JA7nkgg',
+	          'user-id' => 'dannestayskal',
+	          'session-id' => 'NOPE.8XnYkbjP2NVPaI7JA7nkgg',
 	          'nyse-quotes' => 'realtime',
 	          'authorizations' => {
 	                              'options360' => 'false'
@@ -71,7 +71,7 @@ Returns on success: $session (which gets crammed into $self->{session}), which l
 	                                     'segment' => 'AMER',
 	                                     'description' => 'DANN L STAYSKAL',
 	                                     'associated-account' => 'true',
-	                                     'display-name' => 'dannstayskal',
+	                                     'display-name' => 'dannestayskal',
 	                                     'authorizations' => {
 	                                                         'advanced-margin' => 'false',
 	                                                         'level2' => 'false',

@@ -20,7 +20,7 @@ BEGIN {
   $^W = 1;  # Use warnings
   $progname = basename($0);
   $orig_dir = Cwd::cwd();
-  my $base_dir = '/Users/dann/Desktop/Net-Automation';
+  my $base_dir = '/Users/danne/Desktop/Net-Automation';
   if (!magic_number_matches()) {
     unless (chdir($base_dir)) {
       die ("Couldn't chdir($base_dir), aborting\n");

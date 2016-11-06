@@ -1,4 +1,4 @@
-# $Id: handlesSuccess.t,v 0.1 2004/10/25 10:09:40 dann Exp $
+# $Id: handlesSuccess.t,v 0.1 2004/10/25 10:09:40 danne Exp $
 require AI::Memory::Associative::Bidirectional;
 use Test::Simple tests => 1;
 
@@ -102,4 +102,4 @@ sub table{
   $str;
 }
 
-# $Id: handlesSuccess.t,v 0.1 2004/10/25 10:09:40 dann Exp $
+# $Id: handlesSuccess.t,v 0.1 2004/10/25 10:09:40 danne Exp $

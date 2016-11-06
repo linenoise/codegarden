@@ -3,7 +3,7 @@
 require 'rubygems'  
 require 'tweetstream'  
 
-twitter = TweetStream::Client.new('danndalf','OZ79IF980')
+twitter = TweetStream::Client.new('danne','Nope')
 
 if ARGV.length > 0 then
 	twitter.track(ARGV) do |status|
